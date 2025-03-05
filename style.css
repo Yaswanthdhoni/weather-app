@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: grey;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    /* background-repeat:no-repeat; */
+    font-family: 'Varela Round', cursive;
+}
+
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.btn{
+    color: white;
+    margin: 0em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    background-color: #7c7c7c2b;
+
+}
+.btn:hover{
+    border:2px solid whitesmoke;
+    transition: 0.2s ease-in-out;
+    color: whitesmoke;
+}
+.flex{
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+}
+h1{
+    margin-top:10px;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.weather{
+    margin-top:20px;
+}
+
+.temp{
+    font-size: 15px;
+}
+input.searchbar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1.5em;
+    border-radius: 18px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.weather.loading{
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+
+
+input.searchbar:hover{
+    border : 1px solid blanchedalmond;
+}
+/* .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
